@@ -22,7 +22,7 @@ struct ContentView: View {
             VStack (spacing: 50) {
                 Text(titleText)
                     .font(.title)
-                
+            
                 TextField("", text: $name)
                     .font(.title)
                     .multilineTextAlignment(.center)
@@ -60,7 +60,7 @@ struct ContentView: View {
             
             .alert("Correct answer \(name)! Cats are the best!", isPresented: $presentAlert2, actions: {})
         }
-        
+        .background(Color.pink)
         
 }
 
@@ -68,5 +68,6 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
+    
 }
 }
